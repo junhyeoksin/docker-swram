@@ -17,7 +17,7 @@ services:
     deploy:
       labels:
         - "traefik.enable=true"
-        - "traefik.http.routers.guac.rule=Host(`example.test`)"
+        - "traefik.http.routers.guac.rule=Host(`keystrom.site`)"
         - "traefik.http.routers.guac.tls.certresolver=myresolver"
         - "traefik.http.services.guac.loadbalancer.server.port=8080"
         - "traefik.http.routers.guac.middlewares=guac"
